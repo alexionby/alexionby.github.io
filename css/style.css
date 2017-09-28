@@ -1,3 +1,148 @@
+nav a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #f50;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+    nav a {
+      font: normal 12px 'Tahoma', sans-serif;
+    }
+    nav a:hover {
+      font: normal 12px 'Tahoma', sans-serif;
+    }
+    .container {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    main {
+      width: 100%;
+    }
+    aside {
+      margin-top: 40px;
+      margin-left: 2%;
+      background-color: #f0f0f2;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .details {
+      margin-top: 10px;
+      margin-left: 2%;
+      background-color: #f0f0f2;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    footer {
+      padding: 20px 2%;
+    }
+
+    footer ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    footer li {
+      display: inline-block;
+      box-sizing: border-box;
+      border-right: 1px solid #01347F;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+
+    footer p {
+      float: right;
+    }
+
+    footer * {
+      font-family: Tahoma;
+      font-size: 10px;
+      color: #01347F;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+      background-color: #e1e1e1;
+  }
+  nav a {
+    font: normal 15px 'Tahoma', sans-serif;
+  }
+
+  nav a:hover {
+    font: normal 15px 'Tahoma', sans-serif;
+  }
+  main {
+    float:left;
+    width: 60%;
+  }
+  aside {
+    margin-top: 40px;
+    margin-left: 2%;
+    background-color: #f0f0f2;
+    float: right;
+    width: 38%;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .details {
+    margin-top: 10px;
+    margin-left: 2%;
+    background-color: #f0f0f2;
+    float: right;
+    width: 38%;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  footer {
+    padding: 20px 2%;
+  }
+
+  footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  footer li {
+    box-sizing: border-box;
+    border-right: 1px solid #01347F;
+    padding-right: 10px;
+    padding-left: 10px;
+    float:left;
+  }
+
+  footer li:first-child {
+    padding-left: 0px;
+  }
+
+  footer li:last-child {
+    border-right: none;
+  }
+
+  footer p {
+    float: right;
+  }
+
+  footer * {
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #01347F;
+  }
+}
+
+
 .shadow {
   box-shadow: 0px 0px 20px 5px #c8c8c8;
   width: 96%;
@@ -25,9 +170,6 @@ ul {
   list-style: none;
 }
 
-body {
-  background-color: #e1e1e1;
-}
 
 header {
   width: 96%;
@@ -79,20 +221,6 @@ nav {
   text-align: justify;
 }
 
-nav a {
-  color: #fff;
-  font: normal 15px 'Tahoma', sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #f50;
-  font: normal 15px 'Tahoma', sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 #myCarousel {
 
   margin: 20px 2%;
@@ -106,11 +234,6 @@ nav a:hover {
 .main-content {
   margin-left: 3%;
   margin-right: 3%;
-}
-
-main {
-  float:left;
-  width: 60%;
 }
 
 main h3 {
@@ -135,26 +258,6 @@ main ul {
 
 main a {
   color: #01347F;
-}
-
-aside {
-  margin-top: 40px;
-  margin-left: 2%;
-  background-color: #f0f0f2;
-  float: right;
-  width: 38%;
-  padding: 15px;
-  border-radius: 5px;
-}
-
-.details {
-  margin-top: 10px;
-  margin-left: 2%;
-  background-color: #f0f0f2;
-  float: right;
-  width: 38%;
-  padding: 15px;
-  border-radius: 5px;
 }
 
 .details p:first-child {
@@ -191,42 +294,6 @@ aside ul li {
   list-style: square;
   list-style-position: inside;
   color: #555;
-}
-
-footer {
-  padding: 20px 2%;
-}
-
-footer ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-footer li {
-  box-sizing: border-box;
-  border-right: 1px solid #01347F;
-  padding-right: 10px;
-  padding-left: 10px;
-  float:left;
-}
-
-footer li:first-child {
-  padding-left: 0px;
-}
-
-footer li:last-child {
-  border-right: none;
-}
-
-footer p {
-  float: right;
-}
-
-footer * {
-  font-family: Tahoma;
-  font-size: 12px;
-  color: #01347F;
 }
 
 h3 {
