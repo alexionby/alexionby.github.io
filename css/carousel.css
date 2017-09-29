@@ -75,6 +75,7 @@
 .multi-item-carousel .carousel-inner .prev {
   left: -33%;
 }
+
 @media all and (transform-3d), (-webkit-transform-3d) {
   .multi-item-carousel .carousel-inner > .item {
     -webkit-transition: 500ms ease-in-out left;
@@ -105,22 +106,29 @@
   position: relative;
 }
 
-.multi-item-carousel p {
-  position: absolute;
-  z-index: 100;
-  bottom: 0;
-  left: auto;
-  text-align: center;
-  color: #ff8a00;
-  font-weight: 700;
-  background-color: rgb(0,0,0,0.4);
-  text-transform: capitalize;
-  padding: 5px 10px;
-}
-
 @media only screen and (max-width: 768px) {
   .multi-item-carousel p {
-    font-size: 12px;
+
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding-top: 15%;
+    text-align: center;
+
+    background-color: rgba(65, 65, 65, 0.25);
+
+    z-index: 100;
+    color: #ff8a00;
+    font-weight: 700;
+
+    text-transform: capitalize;
+    font-size: 13px;
   }
   .col-xs-4 {
     padding: 5px;
@@ -136,6 +144,16 @@
 
 @media only screen and (min-width: 768px) {
   .multi-item-carousel p {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: auto;
+    text-align: center;
+    color: #ff8a00;
+    font-weight: 700;
+    background-color: rgb(0,0,0,0.4);
+    text-transform: capitalize;
+    padding: 5px 10px;
     font-size: 18px;
   }
   .col-xs-4 {
