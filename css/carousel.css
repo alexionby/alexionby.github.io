@@ -59,6 +59,10 @@
 #carousel figure:nth-child(8) { transform: rotateY( 315deg ) translateZ( 320px ); }
 */
 
+.carousel-indicators {
+  bottom: 0;
+}
+
 .multi-item-carousel .carousel-inner > .item {
   -webkit-transition: 500ms ease-in-out left;
   transition: 500ms ease-in-out left;
