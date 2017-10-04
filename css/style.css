@@ -331,6 +331,7 @@ h3 {
     float:left;
     width: 60%;
   }
+
   aside {
     margin-top: 40px;
     margin-left: 2%;
@@ -504,17 +505,11 @@ main a {
   margin-bottom: 0px;
 }
 
-aside ul, h3 {
-  padding: 0;
-  margin: 0;
-}
-
 aside h3 {
   font-size: 18px;
   font-family: Helvetica;
   color: #F67200;
   font-weight: bold;
-  margin: 0;
 }
 
 aside ul {
@@ -531,10 +526,6 @@ aside ul li {
   list-style: square;
   list-style-position: inside;
   color: #555;
-}
-
-.secondary {
-  margin: 20px 3%;
 }
 
 .secondary hr {

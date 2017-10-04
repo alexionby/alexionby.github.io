@@ -581,6 +581,11 @@
              $(this).children().next().remove();
              last_selection = undefined;
            }
+
+         console.log(  $('a.active').offset()  ,  $('body').offset() , $('document').offset(), $('html').scrollTop() )
+
+         let value = parseInt( $('a.active').offset().top, 10);
+         $('html').scrollTop( value );
          });
 
       });
