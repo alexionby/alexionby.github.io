@@ -47,7 +47,7 @@ h3 {
       border-radius: 5px;
     }
     footer {
-      padding: 10px 2% 0 2%;
+      padding: 10px 0 0 0;
       margin: 0;
     }
 
@@ -59,10 +59,10 @@ h3 {
 
     footer li {
       display: inline-block;
-      width: 19%;
       box-sizing: border-box;
       border-right: 1px solid #01347F;
       text-align: center;
+      padding: 0 5px;
     }
 
     footer li:last-child {
@@ -177,12 +177,12 @@ h3 {
       margin: 20px 0%;
     }
 
-    .feature-list li a {
+    .mobile-list li a {
       font-size: 12px;
       position: relative;
     }
 
-    .feature-list {
+    .mobile-list {
       margin-left: -5px;
       margin-top: -5px;
       margin-right: -5px;
@@ -194,17 +194,17 @@ h3 {
       overflow: auto;
     }
 
-    .feature-list li:first-child {
+    .mobile-list li:first-child {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
     }
 
-    .feature-list li:last-child {
+    .mobile-list li:last-child {
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
     }
 
-    .feature-list li a::after {
+    .mobile-list li a::after {
       text-align: right;
       content: "\f078";
       font-family: FontAwesome;
@@ -228,9 +228,37 @@ h3 {
     .main-content * {
       text-align: center;
     }
+
+    .feature-content.tab-content {
+      display: none;
+    }
+
+    .feature-list.desktop {
+      display: none;
+    }
+
+    div.clearfix {
+      display: none;
+    }
+
+    .inserted-block {
+      max-height: 80vh;
+      overflow: auto;
+      text-align: right;
+      background-color: #BBB;
+      padding: 0 10px 0 10px ;
+    }
+
+    .inserted-block * {
+      text-align: left;
+    }
 }
 
 @media only screen and (min-width: 768px) {
+
+  .mobile-list {
+    display: none;
+  }
 
   .feature-list li:first-child {
     border-top-left-radius: 5px;
@@ -619,23 +647,23 @@ aside ul li {
   border-color: #dd762a;
 }
 
-.feature-list li {
+.feature-list  > li, .mobile-list > li {
   width: 100%;
   border: 1px solid rgb(100,150,200);
   background-color: rgb(50,100,150);
 }
 
-.feature-list li:hover {
+.feature-list > li:hover, .mobile-list > li:hover {
   border: 1px solid rgb(175,200,255);
   background-color: rgb(80, 140, 180);
 }
 
-.feature-list li.active:hover {
+.feature-list > li.active:hover, .mobile-list > li.active:hover {
   background-color: #999;
   border-color: #999
 }
 
-.feature-list li a {
+.feature-list > li a , .mobile-list > li a {
   display: block;
   width: 100%;
   padding: 15px 10px;
@@ -643,7 +671,7 @@ aside ul li {
   text-transform: uppercase;
 }
 
-.feature-list li a:hover {
+.feature-list > li a:hover , .mobile-list > li a:hover {
   text-decoration: none;
 }
 

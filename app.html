@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
 
-    <link rel="shortcut icon" href="img/iw_white.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/iw_2.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet" />
@@ -54,8 +54,29 @@
         <div class="main-content features">
           <h3>Features</h3>
           <hr />
+          <ul class="mobile-list">
+             <li><a href="#acquisition">acquisition</a></li>
+             <li><a href="#interface">interface</a></li>
+             <li><a href="#graphic_editing">graphic editing</a></li>
+             <li><a href="#processing">processing</a></li>
+             <li><a href="#conversion">conversion</a></li>
+             <li><a href="#geometry">geometry, arithmetics and logic</a></li>
+             <li><a href="#interactive">interactive adjustment and segmentation</a></li>
+             <li><a href="#filters">filters</a></li>
+             <li><a href="#fourier">fourier transform</a></li>
+             <li><a href="#morphology">morphology</a></li>
+             <li><a href="#generating">generating</a></li>
+             <li><a href="#calibration">calibration</a></li>
+             <li><a href="#measurment">measurement</a></li>
+             <li><a href="#analysis">analysis</a></li>
+             <li><a href="#visualization">visualization</a></li>
+             <li><a href="#programming">programming</a></li>
+             <li><a href="#requirements">system requirements</a></li>
+             <li><a href="#video_drivers">built-in video drivers</a></li>
+             <li><a href="#customization">customization</a></li>
+          </ul>
           <div class="clearfix">
-            <ul class="feature-list">
+            <ul class="feature-list desktop">
                <li class="active"><a data-toggle="tab" href="#acquisition">acquisition</a></li>
                <li><a data-toggle="tab" href="#interface">interface</a></li>
                <li><a data-toggle="tab" href="#graphic_editing">graphic editing</a></li>
@@ -486,15 +507,16 @@
             <div id="video_drivers" class="tab-pane fade">
               <img class="features-big-img" src="img/drivers-2.png" />
               <ul>
- <li>WDM (DirectShow)and VFW (Video for Windows) devices
- </li><li>TWAIN-supported devices
- </li><li>FireWire (IEEE-1394) digital cameras, IIDC 1.32 compliant
- </li><li>Gigabit Ethernet cameras, GigE Vision 1.x and 2.x compliant
- </li><li>USB 3.0 cameras, USB3 Vision 1.x compliant
- </li><li>GenTL-supported devices, GenICam compliant
- </li><li>Bitflow CameraLink, CoaXPress, LVDS and analog boards: RoadRunner, R3, R64, Neon, Karbon, Alta
- </li><li>Video simulation
-</li></ul>
+               <li>WDM (DirectShow)and VFW (Video for Windows) devices
+               </li><li>TWAIN-supported devices
+               </li><li>FireWire (IEEE-1394) digital cameras, IIDC 1.32 compliant
+               </li><li>Gigabit Ethernet cameras, GigE Vision 1.x and 2.x compliant
+               </li><li>USB 3.0 cameras, USB3 Vision 1.x compliant
+               </li><li>GenTL-supported devices, GenICam compliant
+               </li><li>Bitflow CameraLink, CoaXPress, LVDS and analog boards: RoadRunner, R3, R64, Neon, Karbon, Alta
+               </li><li>Video simulation
+              </li>
+              </ul>
             </div>
             <div id="customization" class="tab-pane fade">
               <img class="features-big-img" src="img/img20.jpg" />
@@ -533,11 +555,34 @@
       <script src="js/script.js"></script>
       <script>
       $(document).ready(function() {
-         var hash = window.location.hash;
+
+         let hash = window.location.hash;
          console.log(hash)
          hash && $('.clearfix a[href="' + hash + '"]').tab('show');
-
          $(".feature-content").height( $(".features .clearfix ul").height() - 10 )
+
+         let last_selection = undefined;
+
+         $('.mobile-list li').click(function(){
+
+           $('.mobile-list li').children().removeClass('active');
+           $('.mobile-list li').children().next().remove();
+
+           if ( $(this).children().attr('href') !=  last_selection) {
+
+             $(this).children().toggleClass('active');
+             last_selection = $(this).children().attr('href');
+
+             let info_block = $($(this).children().attr('href')).clone();
+             info_block.attr('class','inserted-block').hide();
+             $(this).append(info_block);
+             $(this).children().next().slideDown('slow');
+           } else {
+             $(this).children().next().remove();
+             last_selection = undefined;
+           }
+         });
+
       });
       </script>
     </body>
