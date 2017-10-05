@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>ImageWarp - Features</title>
 
     <!-- Bootstrap -->
 
@@ -576,16 +576,16 @@
              let info_block = $($(this).children().attr('href')).clone();
              info_block.attr('class','inserted-block').hide();
              $(this).append(info_block);
+
+             info_block.height( $(window).height() - $('li .active').parent().height() - $('li .active').parent().next().height() );
+
              $(this).children().next().slideDown('slow');
+             $('html').animate({ scrollTop: $('li .active').offset().top }, 1000);
+
            } else {
              $(this).children().next().remove();
              last_selection = undefined;
            }
-
-         console.log(  $('a.active').offset()  ,  $('body').offset() , $('document').offset(), $('html').scrollTop() )
-
-         let value = parseInt( $('a.active').offset().top, 10);
-         $('html').scrollTop( value );
          });
 
       });
