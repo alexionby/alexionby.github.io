@@ -31,20 +31,33 @@ h3 {
     }
     main {
       width: 100%;
+      text-align: center;
     }
+
     aside {
       margin-top: 40px;
-      margin-left: 2%;
       background-color: #f0f0f2;
       padding: 15px;
       border-radius: 5px;
+      padding: 10px 5%;
     }
+
+    aside h3 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    aside ul {
+      margin-top: 10px;
+    }
+
     .details {
       margin-top: 10px;
-      margin-left: 2%;
       background-color: #f0f0f2;
       padding: 15px;
       border-radius: 5px;
+      padding-left: 5%;
+      padding-right: 5%;
     }
     footer {
       text-align: center;
@@ -223,10 +236,6 @@ h3 {
       display: none;
     }
 
-    .main-content * {
-      text-align: center;
-    }
-
     .inserted-block {
 
       overflow: auto;
@@ -259,6 +268,19 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
+
+  aside {
+    margin-left: 2%;
+    padding: 15px;
+  }
+
+  aside ul {
+    margin-top: 10px;
+  }
+
+  .details {
+    margin-left: 2%;
+  }
 
   .mobile-list + .clearfix {
     display: block;
@@ -340,17 +362,16 @@ h3 {
   }
 
   aside {
+    text-align: left;
     margin-top: 40px;
-    margin-left: 2%;
     background-color: #f0f0f2;
     float: right;
     width: 38%;
-    padding: 15px;
     border-radius: 5px;
   }
+
   .details {
     margin-top: 10px;
-    margin-left: 2%;
     background-color: #f0f0f2;
     float: right;
     width: 38%;
@@ -522,7 +543,6 @@ aside h3 {
 
 aside ul {
   list-style: none;
-  margin-top: 15px;
   color: #01347F;
 }
 
