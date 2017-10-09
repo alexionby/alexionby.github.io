@@ -242,9 +242,27 @@ h3 {
     .mobile-list + .clearfix {
       display: none;
     }
+
+    .inserted-block ul {
+      color: white;
+      padding: 15px;
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+
+    .inserted-block ul.sub {
+      padding-left: 15px;
+      list-style-type: square;
+      list-style-position: inside;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
+
+  .mobile-list + .clearfix {
+    display: block;
+  }
 
   .mobile-list {
     display: none;
@@ -472,6 +490,7 @@ main h3 {
 }
 
 main p {
+  text-indent: none;
   font-family: Tahoma;
   color: #555;
   text-align: justify;
