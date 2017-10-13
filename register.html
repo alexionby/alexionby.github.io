@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>ImageWarp / Support</title>
+    <title>ImageWarp / Register</title>
 
     <!-- Bootstrap -->
     <link rel="shortcut icon" href="img/iw_2.png" type="image/x-icon">
@@ -19,6 +19,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
     <script>
     function submitForm()
     {
@@ -26,15 +27,21 @@
 
     	error=false;
     	regMail =/([0-9a-zA-Z\.\-_]+)@([0-9a-zA-Z\.\-_]+)/;
-    	regID =/\s/i;
+    	regID =/([^A-F0-9]+)/i;
 
-    	id=document.supfrm.programid.value;
-    	name=document.supfrm.username.value;
-    	email=document.supfrm.email.value;
-    	os=document.supfrm.useros.value;
+    	id=document.regfrm.programid.value;
+    	name=document.regfrm.username.value;
+    	email=document.regfrm.email.value;
 
-    	customid=document.supfrm.customid.value;
-    	text=document.supfrm.text.value;
+    	comp=document.regfrm.company.value;
+    	addr=document.regfrm.address.value;
+    	city=document.regfrm.city.value;
+    	state=document.regfrm.state.value;
+    	zip=document.regfrm.zipcode.value;
+    	country=document.regfrm.country.value;
+    	phone=document.regfrm.phone.value;
+    	app=document.regfrm.application.value;
+    	resell=document.regfrm.reseller.value;
 
     	if(email.match(regMail)==null)
     	{
@@ -42,7 +49,8 @@
     		msg="You must enter correct E-mail. Check it, please";
     	}
 
-    	if(id.match(regID)!=null)
+
+            if(id.match(regID)!=null)
     	{
     		error=true;
     		msg="You must enter correct Computer ID. Check it, please";
@@ -54,7 +62,7 @@
     		msg="Name must be shorter than 32 chars";
     	}
 
-    	if(email.length==0 || id.length==0 || name.length==0 || customid.length==0 || text.length==0 || os.length==0)
+    	if(id.length==0 || name.length==0 || comp.length==0 || addr.length==0 || city.length==0 || state.length==0 || zip.length==0 || country.length==0 || phone.length==0 || app.length==0 || resell.length==0)
     	{
     		error=true;
     		msg="All fields are required...";
@@ -66,7 +74,6 @@
     	return !error;
     }
     </script>
-
 
   </head>
   <body>
@@ -102,18 +109,20 @@
         <hr class="hr-for-menu"></hr>
         <div class="main-content support">
           <div class="clearfix">
-            <h3 class="">Support</h3>
+            <h3 class="">Free registration</h3>
             <hr />
             <p>
-              ImageWarp includes an extensive context-sensitive help feature. Please be sure to take advantage of this built-in capability prior to contacting us.
+              Please fill out this form to receive a free registration for ImageWarp Demo (all fields are required).
             </p>
             <p>
-              ImageWarp is fully supported by our dedicated team of engineers and we are committed to providing you with the quickest response possible to your questions.
-              If you have a problem or question, use the following form to submit your request. In order to ensure a quick and effective responce,
-              we ask that you provide as many details as possible. We will make every effort to respond to you within one business day.
+              If you are working with an authorized BitFlow Reseller, please contact them directly for the Demo Version upgrade.
+              If you are working with a Reseller, but would prefer to upgrade your Demo Version on your own, please be sure to reference your Reseller in the appropriate field below.
+            </p>
+            <p>
+              Make sure that you are entering zeros (0) rather than the letter O in the Computer ID field.
             </p>
 
-            <form class="form-horizontal" name="supfrm" action="/cgi-bin/mailgate.cgi" method=post onSubmit="return submitForm();">
+            <form name="regfrm" action="/cgi-bin/biorcgi.cgi" method=post onSubmit="return submitForm();" class="form-horizontal">
               <div class="form-group">
                 <label for="username" class="col-sm-3 control-label">Name</label>
                 <div class="col-sm-9">
@@ -128,54 +137,90 @@
                 </div>
               </div>
 
+              <hr />
+
               <div class="form-group">
-                <label for="customid" class="col-sm-3 control-label">Customer ID: *</label>
+                <label for="company" class="col-sm-3 control-label">Company: *</label>
                 <div class="col-sm-9">
-                  <input type="password" class="form-control" name="customid" id="customid" placeholder="********">
+                  <input type="password" class="form-control" name="company" id="company" placeholder="">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="address" class="col-sm-3 control-label">Address: *</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="address" id="address" placeholder="">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="city" class="col-sm-3 control-label">City: *</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="city" id="city" placeholder="">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="state" class="col-sm-3 control-label">State: *</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="state" id="state" placeholder="">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="zipcode" class="col-sm-3 control-label">Zipcode: *</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="zipcode" id="zipcode" placeholder="">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="country" class="col-sm-3 control-label">Country: *</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="country" id="country" placeholder="">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">E-mail: *</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="email" id="email" placeholder="">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="col-sm-3 control-label">Phone: *</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="phone" id="phone" placeholder="">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="application" class="col-sm-3 control-label">Application: *</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="application" id="application" placeholder="">
+
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="form-group">
+                <label for="reseller" class="col-sm-3 control-label">Reseller: *</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="reseller" id="reseller" placeholder="">
                   <small>( type None if not applicable )</small>
                 </div>
               </div>
-
-              <div class="form-group">
-                <label for="useros" class="col-sm-3 control-label">Your OS: *</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" name="useros" id="useros" placeholder="Win, macOS, Linux Mint, ...">
-                  <small>( type title of Your Operating System here )</small>
-                </div>
-              </div>
-
-              <hr />
-
-              <div class="form-group">
-                <label for="email" class="col-sm-3 control-label">Email</label>
-                <div class="col-sm-9">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="company" class="col-sm-3 control-label">Company</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" name="company" id="company" placeholder="Company">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="country" class="col-sm-3 control-label">Country</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" name="country" id="country" placeholder="Country">
-                </div>
-              </div>
-
-              <hr />
-
-              <div class="form-group">
-                <label for="text" class="col-sm-3 control-label">Description of your problem:</label>
-                <div class="col-sm-9">
-                  <textarea class="form-control" rows="3" name='text' id="text" placeholder="Description"></textarea>
-                </div>
-              </div>
-
+              
               <hr />
 
               <div class="form-group">
