@@ -53,6 +53,7 @@ h3 {
     }
 
     .details {
+      margin-left: 3%;
       margin-top: 10px;
       background-color: #f0f0f2;
       padding: 15px;
@@ -60,6 +61,19 @@ h3 {
       padding-left: 5%;
       padding-right: 5%;
     }
+
+    .documentation {
+      margin-left: 3%;
+      margin-top: 10px;
+      background-color: #eee;
+      padding: 15px;
+      border-radius: 5px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
     footer {
       text-align: center;
       padding: 10px 0 0 0;
@@ -87,6 +101,10 @@ h3 {
     footer p {
       text-align: center;
       margin: 5px;
+    }
+
+    footer p a {
+      text-decoration: underline;
     }
 
     footer * {
@@ -279,10 +297,6 @@ h3 {
     margin-top: 10px;
   }
 
-  .details {
-    margin-left: 2%;
-  }
-
   .mobile-list + .clearfix {
     display: block;
   }
@@ -372,6 +386,7 @@ h3 {
   }
 
   .details {
+    margin-left: 2%;
     margin-top: 10px;
     background-color: #f0f0f2;
     float: right;
@@ -379,6 +394,18 @@ h3 {
     padding: 15px;
     border-radius: 5px;
   }
+
+  .documentation {
+    margin-left: 3%;
+    margin-top: 10px;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+
   footer {
     padding: 20px 2%;
   }
@@ -407,6 +434,10 @@ h3 {
 
   footer p {
     float: right;
+  }
+
+  footer p a {
+    text-decoration: underline;
   }
 
   footer * {
@@ -528,7 +559,7 @@ main a {
   color: #01347F;
 }
 
-.details p:first-child {
+.details p:first-child, .documentation p:first-child {
   font-family: Helvetica;
   color: #F67200;
   font-weight: bold;
