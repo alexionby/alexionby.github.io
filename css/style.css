@@ -477,11 +477,9 @@ h3 {
     color: #01347F;
     font-weight: ;
     text-align: right;
-
     position: absolute;
     bottom: 0;
     right: 50px;
-
     text-transform: capitalize;
   }
 
@@ -595,18 +593,23 @@ aside ul li {
 }
 
 .secondary p, .secondary a {
-
   font-family: Tahoma;
-  font-size: 16px;
-  color: #337ab7;
+  font-size: 14px;
+  color: #333;
   padding: 0;
-  margin: 0;.promo-secondary {
+  margin: 0;
+}
+
+.secondary a {
+  text-decoration: underline;
+  color: #337ab7;
+}
+
+.promo-secondary {
 
   font-family: Helvetica;
   font-size: 16px;
   color: #01347F;
-  font-weight: ;
-  /* text-shadow: 0.5px 0.5px 1px #c4c4c4; */
   text-align: right;
 
   position: absolute;
@@ -618,7 +621,6 @@ aside ul li {
 
 .promo-secondary span {
   color: #F67200;
-}
 }
 
 .secondary img {
@@ -711,8 +713,14 @@ aside ul li {
 }
 
 .feature-list > li.active:hover, .mobile-list > li.active:hover {
-  background-color: #999;
-  border-color: #999
+  /*background-color: #999;
+  border-color: #999*/
+  background-color: #cecece;
+  border-color: #cecece;
+}
+
+.feature-list > li.active > a {
+  color: #555;
 }
 
 .feature-list > li a , .mobile-list > li a {
@@ -728,24 +736,30 @@ aside ul li {
 }
 
 .features .active {
-  background-color: #999;
-  border-color: #999;
+  border-color: #cecece;
+  background-color: #cecece;
+  /*background-color: #999;
+  border-color: #999;*/
 }
 
 .features .clearfix {
   border-radius: 5px;
   box-sizing: border-box;
-  border: 5px solid #999;
-  background-color: #999;
+  border: 5px solid #cecece;
+  background-color: #cecece;
+  /*border: 5px solid #999;
+  background-color: #999;*/
 }
 
 .feature-content p {
-  color: white;
+  color: #555;
+  /*color: white;*/
   padding: 0px 15px;
 }
 
 .feature-content div > ul {
-  color: white;
+  /*color: white;*/
+  color: #555;
   padding: 15px;
   list-style-type: disc;
   list-style-position: inside;
