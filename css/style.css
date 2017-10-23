@@ -64,12 +64,13 @@ h3 {
 
     .documentation {
       margin-left: 3%;
+      margin-right: 3%;
       margin-top: 10px;
       background-color: #eee;
       padding: 15px;
       border-radius: 5px;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
+      /*border-top-right-radius: 0;
+      border-bottom-right-radius: 0;*/
       padding-left: 5%;
       padding-right: 5%;
     }
@@ -401,8 +402,9 @@ h3 {
     background-color: #eee;
     padding: 15px;
     border-radius: 5px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    /*border-top-right-radius: 0;
+    border-bottom-right-radius: 0;*/
+    width: 61%;
   }
 
 
