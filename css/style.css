@@ -36,11 +36,7 @@ h3 {
 
     aside {
       margin-top: 40px;
-      background-color: #f0f0f2;
-      padding: 15px;
       border-radius: 5px;
-      padding: 10px 5%;
-      padding-bottom: 15px;
     }
 
     aside h3 {
@@ -56,6 +52,7 @@ h3 {
 
       margin-top: 10px;
       background-color: #f0f0f2;
+      border: 1px solid #ddd;
       padding: 15px;
       border-radius: 5px;
       padding-left: 5%;
@@ -390,6 +387,7 @@ h3 {
     margin-left: 2%;
     margin-top: 10px;
     background-color: #f0f0f2;
+    border: 1px solid #ddd;
     float: right;
     width: 38%;
     padding: 15px;
