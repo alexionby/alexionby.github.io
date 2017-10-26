@@ -53,7 +53,7 @@ h3 {
     }
 
     .details {
-      margin-left: 3%;
+
       margin-top: 10px;
       background-color: #f0f0f2;
       padding: 15px;
@@ -291,7 +291,7 @@ h3 {
 
   aside {
     margin-left: 2%;
-    padding: 15px;
+
   }
 
   aside ul {
@@ -380,7 +380,7 @@ h3 {
   aside {
     text-align: left;
     margin-top: 40px;
-    background-color: #f0f0f2;
+    /*background-color: #f0f0f2;*/
     float: right;
     width: 38%;
     border-radius: 5px;
@@ -770,22 +770,52 @@ aside ul li {
   padding: 15px;
 }
 
-.nav-pills {
+.nav-tabs {
   margin: 0;
 }
 
-.nav-pills li {
+.nav-tabs li {
   text-align: center;
-  width: 48%;
+  width: 50%;
 }
 
-.nav-pills li.active a {
+.nav-tabs li.active a {
   font-size: 16px;
   font-weight: bold;
 }
 
-.nav-pills li a {
+.nav-tabs li.active a {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #eee;
+  color: #337ab7;
+}
+
+.nav-tabs li.active a:focus {
+  background-color: #eee;
+  color: #337ab7;
+}
+
+.nav-tabs li:last-child a {
+  margin-right: 0;
+}
+
+.nav-tabs li a {
   color:#F67200;
   font-size: 16px;
   font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+.tab-content ul {
+  margin-top: 0;
+  padding: 15px;
+}
+
+.tab-content div {
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none;
+  background-color: #eee;
 }
