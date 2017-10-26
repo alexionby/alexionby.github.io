@@ -715,8 +715,6 @@ aside ul li {
 }
 
 .feature-list > li.active:hover, .mobile-list > li.active:hover {
-  /*background-color: #999;
-  border-color: #999*/
   background-color: #cecece;
   border-color: #cecece;
 }
@@ -740,8 +738,6 @@ aside ul li {
 .features .active {
   border-color: #cecece;
   background-color: #cecece;
-  /*background-color: #999;
-  border-color: #999;*/
 }
 
 .features .clearfix {
@@ -749,18 +745,14 @@ aside ul li {
   box-sizing: border-box;
   border: 5px solid #cecece;
   background-color: #cecece;
-  /*border: 5px solid #999;
-  background-color: #999;*/
 }
 
 .feature-content p {
   color: #555;
-  /*color: white;*/
   padding: 0px 15px;
 }
 
 .feature-content div > ul {
-  /*color: white;*/
   color: #555;
   padding: 15px;
   list-style-type: disc;
@@ -778,15 +770,22 @@ aside ul li {
   padding: 15px;
 }
 
-/*position: absolute;
-z-index: 100;
-bottom: 0;
-left: auto;
-text-align: center;
-font-size: 17px;
-color: #ff8a00;
-font-weight: 700;
-background-color: rgb(0,0,0,0.4);
-text-transform: capitalize;
-padding: 5px 10px;
-*/
+.nav-pills {
+  margin: 0;
+}
+
+.nav-pills li {
+  text-align: center;
+  width: 48%;
+}
+
+.nav-pills li.active a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-pills li a {
+  color:#F67200;
+  font-size: 16px;
+  font-weight: bold;
+}
