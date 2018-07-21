@@ -1,483 +1,55 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <title>Медицинский центр МТЗ</title>
-    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<html lang="en">
+<head>
 
-    <meta charset="utf-8">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Alex Glinsky</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map,Placemark,Geolink" type="text/javascript"></script>
-  </head>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
-    <div class="container">
-      <!--header-->
-      <header>
-          <div class="left">
-            <img class="img-logo" src="images/logo.svg" type="image/svg+xml"/>
-          </div>
-          <h1 class="left center-align logo">Медицинский центр МТЗ</h1>
-          <div class="right-align contact-info">
-            <p class="ymaps-geolink"> Минск, ул. Стахановская, 10А</p>
-            <p>Время работы: c 8.00 до 20.00</p>
-            <p>(029) 656-98-23 (моб.)</p>
-            <p>(029) 657-02-13 (моб.)</p>
-          </div>
-      </header>
-      <!--Bavigation-->
-      <nav class="teal darken-1 global-nav">
-        <div class="nav-wrapper">
-          <ul id="teal lighten-1 nav-mobile" class="left hide-on-med-and-down">
-            <li class="active"><a href="index.html"> ПОЛИКЛИНИКА </a></li>
-            <li><a href="price.html">УСЛУГИ И ЦЕНЫ</a></li>
-            <li><a href="kontakt.htm">КОНТАКТЫ</a></li>
-            <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-            <li><a href="galery.html"> ФОТОГАЛЕРЕЯ </a></li>
-            <li><a href="1rud.html">САНАТОРИЙ "РУДНЯ"</a></li>
-            <li class="right">
-              <form>
-                <div class="input-field">
-                  <input id="search" type="search" required placeholder="Поиск по сайту">
-                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                  <i class="material-icons">close</i>
-                </div>
-              </form>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-      <img class="top-image" width="100%" src="images/shift.png">
-      
-      <!--<nav class="teal darken-1 local-nav">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Навигация</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Скидки</a></li>
-            <li><a href="badges.html">Контактная информация</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-        </div>
-      </nav>-->
-      
-      <div class="container fixed-local-nav hide">
-        <div class="row">
-          <div class="col s8">
-            <nav>
-                <div class="nav-wrapper">
-                  <!--<span href="#" class="brand-logo">Навигация</span>-->
-                  <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="#about">О центре</a></li>
-                    <li><a href="#offers">Услуги</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                  </ul>
-                </div>
-              </nav>
-          </div>
-        </div>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <h1>Alex Glinsky / <small>Алексей Глинский</small></h1>
+
+    <ul>
+      <li>Item 1</li>
+      <li>
+        Item 2
+        <ul>
+          <li>Item 2.1</li>
+          <li>Item 2.2</li>
+        </ul>
+      </li>
+      <li>Item 3</li>
+    </ul>
+
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h4>Basic Page</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
       </div>
-
-      <section class="row">
-        <div class="col s8">
-          <div id="local-nav">
-            <nav>
-              <div class="nav-wrapper">
-                <!--<span href="#" class="brand-logo">Навигация</span>-->
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                  <li><a href="#about">О центре</a></li>
-                  <li><a href="#offers">Услуги</a></li>
-                  <li><a href="#contact">Контакты</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-
-          <article id="about" class="scrollspy no-autoinit">
-              <p>
-                <span>Медицинский центр МТЗ</span> является одним из ведущих медицинских учреждений г. Минска. Оказывает широкий спектр медицинских услуг работникам ОАО «МТЗ» и сторонним лицам на договорной основе.
-              </p>
-              <p>
-                  В поликлинике работают <span>квалифицированные врачи</span>, среди которых <span>семь кандидатов наук</span> . У нас соединяются воедино традиционное качество, современное оборудование, высокий профессионализм, а медицинские услуги оказываются по государственным расценкам!
-              </p>
-              <p> 
-                  Обслуживаясь в поликлинике Медицинского центра МТЗ, Вы получаете возможность выполнить все необходимые назначения <span>качественно, в полном объеме, по доступным ценам и в одном месте.<span>
-              </p>
-            </article>
-
-            <div id="offers" class="scrollspy no-autoinit">
-                <h4 class="section-header center-align teal">Направления нашей работы</h4>
-                <div class="carousel carousel-slider">
-                  <a class="carousel-item" href="#one!"><img src="images/fasad31a.jpg"></a>
-                  <a class="carousel-item" href="#two!"><img src="images/fasad41a.jpg"></a>
-                  <a class="carousel-item" href="#three!"><img src="images/fasad51a.jpg"></a>
-                  <a class="carousel-item" href="#four!"><img src="images/fasad61a.jpg"></a>
-                </div>
-    
-                <div class="row">
-                <div class="col s12">
-                  <ul class="tabs">
-                    <li class="tab col s6"><a class="active" href="#our-specs">Наши специалисты</a></li>
-                    <li class="tab col s6"><a href="#our-specz">Наши специализации</a></li>
-                  </ul>
-                </div>
-                <div id="our-specs" class="col s12">
-                  <ul class="collapsible">
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Анестезиолог - реаниматолог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Акушер - гинеколог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Врач мануальной терапии</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Гастроэнтеролог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Анестезиолог - реаниматолог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Акушер - гинеколог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Врач мануальной терапии</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Гастроэнтеролог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Анестезиолог - реаниматолог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Акушер - гинеколог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Врач мануальной терапии</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Гастроэнтеролог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Анестезиолог - реаниматолог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Акушер - гинеколог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Врач мануальной терапии</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Гастроэнтеролог</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                  </ul>
-                </div>
-                <div id="our-specz" class="col s12">
-                  <ul class="collapsible">
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-        </div>
-        
-        <div class="col s4">
-
-          <div class="sidebar">
-            <h5 class="center-align">Популярные запросы</h5>
-            <a class="waves-effect waves-light btn">Порядок обращения</a>
-            <a class="waves-effect waves-light btn">Услуги и цены</a>
-            <a class="waves-effect waves-light btn">Водительская комисия</a>
-            <a class="waves-effect waves-light btn">Вакансии</a>
-            <a class="waves-effect waves-light btn">Электронное обращение</a>
-            <a class="waves-effect waves-light btn">Телефон доверия</a>   
-            <!--
-            <a class="waves-effect waves-light btn">О нашем центре</a>
-            <a class="waves-effect waves-light btn">Популярные услуги</a>
-            <a class="waves-effect waves-light btn">Наши специализации</a>
-            <a class="waves-effect waves-light btn">Скидки и предложения</a>
-            <a class="waves-effect waves-light btn">Контактная информация</a>
-            <a class="waves-effect waves-light btn">Дополнительная информация</a>   
-            --> 
-          </div>
-
-          <!--<div class="local-nav">
-            <h5 class="center-align">Дополнительные услуги</h5>
-            <a class="waves-effect waves-light btn">Электронное обращение</a>
-            <a class="waves-effect waves-light btn">Водительская комисия</a>
-            <a class="waves-effect waves-light btn">Наши специализации</a>
-            <a class="waves-effect waves-light btn">Скидки и предложения</a>
-            <a class="waves-effect waves-light btn">Контактная информация</a>
-            <a class="waves-effect waves-light btn">Дополнительная информация</a>    
-          </div>-->
-
-          <div class="sales">
-            <h5 class="center-align">Скидки</h5>
-            <div>
-              <img class="responsive-img materialboxed p-10" src="images/skidki.jpg">
-            </div>
-            <div>
-              <img class="responsive-img materialboxed p-10" src="images/skidki_a1.jpg">
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!--
-      <section class="row">
-        <div class="col s12">
-          <div class="col s4 push-s8">
-          <h4 class="hide">Популярные услуги</h4>
-          <ul class="tabs vertical">
-            <li class="tab col s4"><a class="active" href="#test1">Лазерная коррекция зрения</a></li>
-            <li class="tab col s4"><a href="#test2">Физиотерапия</a></li>
-            <li class="tab col s4"><a href="#test3">Реабилитация</a></li>
-            <li class="tab col s4"><a href="#test4">Лабораторная диагностика</a></li>
-            <li class="tab col s4"><a href="#test5">Рентгенологические исследования</a></li>
-            <li class="tab col s4"><a href="#test6">Эндоскопия</a></li>
-            <li class="tab col s4"><a href="#test7">Офтальмология</a></li>
-            <li class="tab col s4"><a href="#test8">Санаторий Рудня</a></li>
-          </ul>
-          </div>
-          <div id="test1" class="col s8 pull-s4">
-            <img class="responsive-img w-100" src="images/fasad31a.jpg" alt="" class="src">
-          </div>
-          <div id="test2" class="col s8">
-            <img class="responsive-img w-100" src="images/fasad41a.jpg" alt="" class="src">
-          </div>
-          <div id="test3" class="col s8">
-            <img class="responsive-img w-100" src="images/fasad51a.jpg" alt="" class="src">
-          </div>
-          <div id="test4" class="col s8">
-            <img class="responsive-img w-100" src="images/fasad61a.jpg" alt="" class="src">
-          </div>
-          <div id="test5" class="col s8">
-            <img class="responsive-img w-100" src="images/fasad71a.jpg" alt="" class="src">
-          </div>
-          <div id="test6" class="col s8">
-            <img class="responsive-img w-100" src="images/fasad81a.jpg" alt="" class="src">
-          </div>
-          <div id="test7" class="col s8">
-            <img class="responsive-img w-100" src="images/fasad91a.jpg" alt="" class="src">
-          </div>
-          <div id="test8" class="col s8">
-            <img class="responsive-img w-100" src="images/fasad101a.jpg" alt="" class="src">
-          </div>
-        </div>
-      </section>
-      -->
-
-      <!--
-      <div class="row">
-        <div class="col s6">
-          <img class="materialboxed auto-margin" src="images/skidki.jpg">
-        </div>
-        <div class="col s6">
-          <img class="materialboxed auto-margin" src="images/skidki_a1.jpg">
-        </div>
-      </div>
-      -->
-
-      <!--
-      <div class="carousel carousel-slider center images-row-2">
-        <div class="carousel-item red white-text" href="#one!">
-          <div class="row">
-              <a href="#" class="col s6"><img src="images/fasad91a.jpg"></a>
-              <a href="#" class="col s6"><img src="images/fasad81a.jpg"></a>
-          </div>
-        </div>
-      </div>
-      -->
-  
-      <!--<h2 class="logo center-align mb-20">Контактная информация</h2>-->
-      <div id="contact" class="scrollspy no-autoinit">
-        <section class="row">
-          <div class="col s8">
-            <h4 class="section-header center-align teal">Контактная информация</h4>
-          </div>
-          <div class="col s4">
-          </div>
-        </section>
-        <div id="map">
-          <div>
-            <div class="contact-numbers">
-              <p>• Кабинет платных услуг (каб. №212):</p>
-              <ul>
-                <li><i class="material-icons">phone</i>(017) 266-99-38 (гор.)</li>
-                <li><i class="material-icons">phone</i>(017) 399-46-68 (гор.)</li>
-                <li><i class="material-icons">phone</i>(029) 656-98-23 (моб.)</li>
-                <li><i class="material-icons">phone</i>(029) 657-02-13 (моб.)</li>
-              </ul>
-              <div class="row">
-                <p class="col s5">
-                    • Офтальмология:
-                </p>
-                <span class="col s7">
-                    <i class="material-icons">phone</i>(017) 398-95-00
-                </span>
-              </div>
-              <div class="row">
-                  <p class="col s5">
-                      • Стоматология:
-                  </p>
-                  <span class="col s7">
-                      <i class="material-icons">phone</i>(017) 398-93-56
-                  </span>
-                </div>
-                <div class="row">
-                    <p class="col s5">
-                        • Кабинет МРТ:
-                    </p>
-                    <span class="col s7">
-                        <i class="material-icons">phone</i>(017) 398-86-10
-                    </span>
-                  </div>   
-            </div>
-            <p>Режим работы поликлиники:</p>
-            <p class="mb-10">В две смены с 8.00 до 20.00</p>
-            <p>Наш адрес: <span class="ymaps-geolink"> Минск, ул. Стахановская, 10А </span></p>
-          </div>
-        </div>
-      </div>
-    
-          <footer class="page-footer teal darken-1">
-            <div class="container">
-              <div class="row">
-                <div class="col l6 s12">
-                  <h5 class="white-text">Фотогалерея</h5>
-                  <!--<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>-->
-                  <div class="row mb-20">
-                    <div class="col s6">
-                      <img src="images/a_3.jpg" alt="" class="responsive-img">
-                    </div>
-                    <div class="col s6">
-                      <img src="images/a_4.jpg" alt="" class="responsive-img">
-                    </div>
-                  </div>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text"><a class="grey-text text-lighten-3" href="otziv3.html">Информация</a></h5>
-                  <ul>
-                    <li><a class="grey-text text-lighten-3" href="otziv3.html">Электронное обращение </a></li>
-                    <li><a class="grey-text text-lighten-3" href="drive_k.html">Водительская комисия </a>
-                    <li><a class="grey-text text-lighten-3" href="info.html#in3">Заявление на выписку из амб. карты</a>
-                    <li><a class="grey-text text-lighten-3" href="info.html#in55">Как уберечь себя от инсульта</a>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="footer-copyright">
-              <div class="container">
-              © 2018 "Медицинский центр МТЗ" Все права защищены
-              <a class="grey-text text-lighten-4 right lpad-10 rpad-10" href="http://www.president.gov.by/" target="_blank">ПРЕЗИДЕНТ РБ</a>
-              <a class="grey-text text-lighten-4 right lpad-10 rpad-10" href="http://minzdrav.gov.by/" target="_blank">МИНЗДРАВ РБ</a>
-              <a class="grey-text text-lighten-4 right lpad-10 rpad-10" href="http://www.103.BY/" target="_blank">ПОРТАЛ 103.BY</a>
-              </div>
-            </div>
-          </footer>
-    </div>            
-
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-    <script>
-      
-      let pad = 0;
-
-      document.addEventListener('DOMContentLoaded', () => {
-      console.log(document.getElementById("local-nav").offsetTop);
-
-      document.addEventListener("scroll", () => {
-
-
-
-        const fixed_nav = document.querySelector(".container.fixed-local-nav");
-        const nav = document.getElementById("local-nav");
-
-        if (nav.offsetTop > 0) {
-          pad = nav.offsetTop;
-        }
-        
-        if (pad < window.scrollY) {
-          fixed_nav.classList.remove("hide");
-          nav.classList.add("hide");
-          //nav.classList.add("fixed-local-nav","container");
-        } else { 
-          fixed_nav.classList.add("hide");
-          nav.classList.remove("hide");
-          //nav.classList.remove("fixed-local-nav","container");
-        }
-      })
-      });
-
-      document.addEventListener("DOMContentLoaded", () => {
-        
-        M.AutoInit();
-
-        var elems = document.querySelectorAll('.slider');
-        var instances = M.Slider.init(elems);
-      });
-
-      document.addEventListener('DOMContentLoaded', function() {
-        options = {"scrollOffset": 0};
-        var elems = document.querySelectorAll('.scrollspy');
-        var instances = M.ScrollSpy.init(elems, options);
-      });
-    </script>
-
-    <script type="text/javascript">
-      ymaps.ready(init);
-      let myMap, myPlacemark;
-  
-      function init(){
-          myMap = new ymaps.Map("map", {
-              center: [53.89, 27.614],
-              zoom: 16,
-          });
-  
-          myPlacemark = new ymaps.Placemark([53.889415, 27.606459], {
-              hintContent: "Медицинский центр МТЗ"
-          }, {
-              preset: 'islands#darkGreenMedicalIcon'
-          });
-  
-          myMap.geoObjects.add(myPlacemark);
-      }
-    </script>
-  </body>
+    </div>
+  </div>
+</body>
 </html>
