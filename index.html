@@ -4,7 +4,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Alex Glinsky</title>
+  <title>CV: Alex Glinsky</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -20,6 +20,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,26 +35,163 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <h1>Alex Glinsky / <small>Алексей Глинский</small></h1>
-
-    <ul>
-      <li>Item 1</li>
-      <li>
-        Item 2
-        <ul>
-          <li>Item 2.1</li>
-          <li>Item 2.2</li>
-        </ul>
-      </li>
-      <li>Item 3</li>
-    </ul>
-
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+    <header class="u-full-width u-cf">
+      <h4 class="u-pull-left">Alex Glinsky</h4>
+      <!--<a href="#" class="u-pull-right">English</a>-->
+    </header>
+    <div id="contacts" class="row">
+      <div class="four columns">
+        <p><i class="fas fa-map-marker-alt"></i><span>Minsk, Belarus</span></p>
+      </div>
+      <div class="four columns">
+        <p>
+            <a href="tg://resolve?domain=alexionby"><i class="fab fa-telegram"></i></a>
+          <a href="viber://chat?number=+375259766237"><i class="fab fa-viber"></i></a>
+          <a href="tel:+375259766237"><i class="fas fa-phone-square"></i></a>
+          <span>+375 (25) 976-62-37</span>
+        </p>
+      </div>
+      <div class="four columns">
+        <p>
+          <a href="mailto:webmaster@example.com"><i class="fas fa-envelope"></i></a>
+          <span>alexionon@mail.ru</span>
+        </p>
       </div>
     </div>
+
+    <!--
+    <ul class="row">
+      <li class="two columns"><a href="#">Summary</a></li>
+      <li class="two columns"><a href="#">Education</a></li>
+      <li class="two columns"><a href="#">Experience</a></li>
+      <li class="two columns"><a href="#">Skills</a></li>
+      <li class="two columns"><a href="#">Activities</a></li>
+    </ul>
+     -->
+
+    <nav>
+      <ul class="#">
+          <!--<li class="#"><a href="#">Contacts</a></li>-->
+          <li class="#"><a href="#summary">Summary</a></li>
+          <li class="#"><a href="#education">Education</a></li>
+          <li class="#"><a href="#experience">Experience</a></li>
+          <li class="#"><a href="#skills">Skills</a></li>
+          <li class="#"><a href="#activities">Activities</a></li>
+        </ul>
+    </nav>
+    
+    <h4 id="summary">Summary</h4>
+    <p>
+      Data Scientist and Computer Vision engineer with strong math background and 2 years of experience using deep learning algorithms, data processing, and data mining algorithms to solve challenging healthcare problems.
+      Also familiar with classic Computer Vision algorithms and experienced in integrating deep learning models to production software, such as web or desktop application.
+    </p>
+
+    <h4 id="education">Education</h4>
+    <div>
+      <div class="education">
+        <p class="u-pull-right">2011-2016</p>
+        <p>Belarusian State University of Informatics and Radioelectronics</p>
+        <p>Bachelor degree</p>
+        <p>Вычислительные машины, системы и сети</p>
+      </div>
+
+      <div class="education">
+        <p class="u-pull-right">2016-2018</p>
+        <p>Belarusian State University of Informatics and Radioelectronics</p>
+        <p>Master degree</p>
+        <p>Технологии виртуализации и облачных вычислений</p>
+      </div>
+
+      <p>In 2017 i have completed <a href="https://github.com/Yorko/mlcourse_open">Open Machine Learning Course</a> in 
+        <a href="https://github.com/Yorko/mlcourse_open/wiki/Session-1-final-rating-(in-Russian)">Top-12</a>, 
+        mostly thanks to the first place in the final ML competition 
+        <a href="https://www.kaggle.com/c/catch-me-if-you-can-intruder-detection-through-webpage-session-tracking/leaderboard">Catch Me If You Can: Intruder Detection through Webpage Session Tracking.</a></p>
+    </div>
+
+    <h4 id="experience">Experience</h4>
+    <div class="exp">
+      <p class="mb-0"><strong>Computer Scientist / Researcher</strong></p>
+      <p class="u-pull-right">October 2011 - present</p>
+      <p class="mb-10">Belarusian State Medical University</p>
+      <ul>
+        <li>Developing and implementing Computer Vision alghoritms for medical apps</li>
+        <li>Building desktop applications with Python/JavaScript/C++</li>
+        <li>Building web-apps/websites with Python/Javascript</li>
+        <li>Collecting/Analyzing/Preparing/Cleaning data for Computer Vision alghoritms</li>
+      </ul>
+    </div>
+
+    <h4 id="skills">Skills</h4>
+    <ul>
+      <li>Fluent Python</li>
+      <li>Good knowledge of modern Javascript (es6)</li>
+      <li>Slight knowledge of C++</li>
+      <li>Good knowledge of Machine Learning and related libraries:</li>
+      <ul>
+        <li>Good knowledge of SciPy stack: Numpy / Scikit-learn / SciPy / Matplotlib / Pandas</li>
+        <li>Experienced in using different NLP libraries gensim / pymorphy2 / nltk</li>
+        <li>Experienced in using modern gradient boosting based libraries: XGBoost / LightGBM / CatBoost</li>
+      </ul>
+      <li>Experienced in Computer Vision and related libraries:</i>
+        <ul>
+          <li>OpenCV / Scikit-image / Pillow / imgaug</li>
+        </ul>
+      </li>
+      <li>Deep Learning</li>
+        <ul>
+          <li>Good knowlegde of Tensorflow / Keras / PyTorch</li>
+          <li>Familiar with CNTK / MxNet</li>
+        </ul>
+      <li>Web frameworks / Frontend / Backend
+        <ul>
+          <li>Flask / SQLAlchemy</li>
+          <li>Jquery / Math.js / Webpack / Node.js / Bootstrap</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4 id="activities">Activities</h4>
+    
+    <div class="activities">
+
+      <p>
+        In 2017 i have been taking part in <a href="https://vk.com/wall-117459195_383">Эвотор Data Challenge</a> on boosters platform and took the 3rd place. 
+        The first place was taken by Dmitry Ulyanov, who created a well-known application <a href="https://prisma-ai.com/">Prisma</a>.
+      </p>
+
+      <div id="vk_post_-117459195_383">
+
+      </div>
+      <script type="text/javascript">
+        (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "https://vk.com/js/api/openapi.js?157"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));
+        (function() {
+          if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_-117459195_383", -117459195, 383, 'ogj4kMIMbTSgomAoQ2XiMSP8yUc')) setTimeout(arguments.callee, 50);
+        }());
+      </script>
+
+      <p>
+        Later, same year, as a member of team <strong>Laine Assist</strong> I took the <strong>3rd place</strong> in <strong>AI Hackaton</strong>. Our goal was to develop a self-driving car prototype based on Computer Vision and Deep Learning alghoritms.
+      </p>
+      <img class="u-full-width" src="images/hackaton.jpg" alt="">
+
+      <p>I am also a big fan of Kaggle competitions, and I have reached top-1000 among 83.5k users:</p>
+
+      <a href="https://www.kaggle.com/alexionby">
+        <img src="images/kaggle.png" alt="stackoverflow profile">
+      </a>
+
+      <p>And i have an active Profile on StackOverflow:</p>
+      <a href="https://stackoverflow.com/users/6416957/alex-glinsky">
+        <img src="images/stack.png" alt="stackoverflow profile">
+      </a>
+
+      <p>And, finally, I like to solve difficult programming tasks on Codewars:</p>
+
+      <a href="https://www.codewars.com/users/Alexionby">
+        <img src="https://www.codewars.com/users/Alexionby/badges/large" alt="">
+      </a>  
+    </div>
+
   </div>
 </body>
 </html>
